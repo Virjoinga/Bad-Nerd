@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1001 &100100000
 Prefab:
-  serializedVersion: 2
   m_ObjectHideFlags: 1
+  serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
@@ -11,26 +11,25 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1479957679542368}
   m_IsPrefabParent: 1
-  m_IsExploded: 0
 --- !u!1 &1479957679542368
 GameObject:
-  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4772452253762264}
-  - 33: {fileID: 33603283953389407}
-  - 23: {fileID: 23893961781972047}
-  - 114: {fileID: 114579931346135835}
-  - 54: {fileID: 54141925712862683}
-  - 65: {fileID: 65413367216670378}
+  - component: {fileID: 4772452253762264}
+  - component: {fileID: 33603283953389407}
+  - component: {fileID: 23893961781972047}
+  - component: {fileID: 114579931346135835}
+  - component: {fileID: 54141925712862683}
+  - component: {fileID: 65413367216670378}
   m_Layer: 0
   m_Name: Zombie Drool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4772452253762264
 Transform:
@@ -44,13 +43,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!33 &33603283953389407
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479957679542368}
-  m_Mesh: {fileID: 4300000, guid: e2b9f15f6680b0d4dac510495f9e7b5d, type: 2}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23893961781972047
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60,20 +53,65 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 8e67ff1393c20ad429eb2e4d8adce2b3, type: 2}
-  m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_LightProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!33 &33603283953389407
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1479957679542368}
+  m_Mesh: {fileID: 4300000, guid: e2b9f15f6680b0d4dac510495f9e7b5d, type: 2}
+--- !u!54 &54141925712862683
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1479957679542368}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65413367216670378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1479957679542368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.999999, y: 3.7720091, z: 1.9021161}
+  m_Center: {x: 0.0233455, y: 1.8812875, z: 0.004648}
 --- !u!114 &114579931346135835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,10 +121,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddf189e2d161ae325cb73023264360b7, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   price: 100
-  description: Drinking zombie drool will turn you into a zombie nerd for a short period of time giving you super human powers!
+  description: Drinking zombie drool will turn you into a zombie nerd for a short
+    period of time giving you super human powers!
   spin: 0
   spinSpeed: 1
   carryingWeight: 1
@@ -103,30 +142,3 @@ MonoBehaviour:
   dontStripDescriptionLineBreaks: 0
   count: 1
   effectiveTimeInSeconds: 10
---- !u!54 &54141925712862683
-Rigidbody:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479957679542368}
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65413367216670378
-BoxCollider:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479957679542368}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Size: {x: 1.999999, y: 3.7720091, z: 1.9021161}
-  m_Center: {x: 0.0233455, y: 1.8812875, z: 0.004648}

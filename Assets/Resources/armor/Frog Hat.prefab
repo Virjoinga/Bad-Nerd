@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1001 &100100000
 Prefab:
-  serializedVersion: 2
   m_ObjectHideFlags: 1
+  serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
@@ -11,26 +11,25 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1056625733996506}
   m_IsPrefabParent: 1
-  m_IsExploded: 0
 --- !u!1 &1056625733996506
 GameObject:
-  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4657792070647674}
-  - 33: {fileID: 33436714519563880}
-  - 23: {fileID: 23933185001030186}
-  - 114: {fileID: 114924739423371463}
-  - 54: {fileID: 54009013527430273}
-  - 65: {fileID: 65721609501079390}
+  - component: {fileID: 4657792070647674}
+  - component: {fileID: 33436714519563880}
+  - component: {fileID: 23933185001030186}
+  - component: {fileID: 114924739423371463}
+  - component: {fileID: 54009013527430273}
+  - component: {fileID: 65721609501079390}
   m_Layer: 14
   m_Name: Frog Hat
   m_TagString: armor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4657792070647674
 Transform:
@@ -44,13 +43,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!33 &33436714519563880
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1056625733996506}
-  m_Mesh: {fileID: 4300000, guid: e187cf073a149304e96171e0c1ae9909, type: 2}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23933185001030186
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60,20 +53,65 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 64755c408ac670740848b4105f84440e, type: 2}
-  m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_LightProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!33 &33436714519563880
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1056625733996506}
+  m_Mesh: {fileID: 4300000, guid: e187cf073a149304e96171e0c1ae9909, type: 2}
+--- !u!54 &54009013527430273
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1056625733996506}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65721609501079390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1056625733996506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.790108, y: 1.808866, z: 2.471556}
+  m_Center: {x: -0.18785703, y: 0.607453, z: 0.070153}
 --- !u!114 &114924739423371463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,10 +121,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04c6d8a5b4a15b0d4b78b68c6051d4d2, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   price: 450
-  description: If you like frogs then this hat is for you!  This is not the strongest hat I got but like many other things I sell, you can always upgrade it to make it stronger.
+  description: If you like frogs then this hat is for you!  This is not the strongest
+    hat I got but like many other things I sell, you can always upgrade it to make
+    it stronger.
   spin: 0
   spinSpeed: 1
   carryingWeight: 45
@@ -105,30 +145,3 @@ MonoBehaviour:
   maxLife: 500
   life: 0
   defense: 0.12
---- !u!54 &54009013527430273
-Rigidbody:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1056625733996506}
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65721609501079390
-BoxCollider:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1056625733996506}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Size: {x: 3.790108, y: 1.808866, z: 2.471556}
-  m_Center: {x: -0.18785703, y: 0.607453, z: 0.070153}

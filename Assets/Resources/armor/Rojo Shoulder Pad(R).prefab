@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1001 &100100000
 Prefab:
-  serializedVersion: 2
   m_ObjectHideFlags: 1
+  serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
@@ -11,26 +11,25 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1690394658853467}
   m_IsPrefabParent: 1
-  m_IsExploded: 0
 --- !u!1 &1690394658853467
 GameObject:
-  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4701229293020580}
-  - 33: {fileID: 33354683525386303}
-  - 23: {fileID: 23130759224355667}
-  - 114: {fileID: 114999952349205884}
-  - 54: {fileID: 54225264361783284}
-  - 65: {fileID: 65528627280358751}
+  - component: {fileID: 4701229293020580}
+  - component: {fileID: 33354683525386303}
+  - component: {fileID: 23130759224355667}
+  - component: {fileID: 114999952349205884}
+  - component: {fileID: 54225264361783284}
+  - component: {fileID: 65528627280358751}
   m_Layer: 14
   m_Name: Rojo Shoulder Pad(R)
   m_TagString: armor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4701229293020580
 Transform:
@@ -38,19 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1690394658853467}
-  m_LocalRotation: {x: 5.4210105E-20, y: -2.3283063E-10, z: 2.3283064E-10, w: 1}
-  m_LocalPosition: {x: -3.364935E-10, y: 0.7226143, z: 0}
+  m_LocalRotation: {x: 5.4210105e-20, y: -2.3283063e-10, z: 2.3283064e-10, w: 1}
+  m_LocalPosition: {x: -3.364935e-10, y: 0.7226143, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!33 &33354683525386303
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1690394658853467}
-  m_Mesh: {fileID: 4300000, guid: 2c1ebed1136d1ca4fa8a2e478f44f1be, type: 2}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23130759224355667
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60,20 +53,65 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: dea0fcb5a49039e44be42598afd9ba90, type: 2}
-  m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_LightProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!33 &33354683525386303
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690394658853467}
+  m_Mesh: {fileID: 4300000, guid: 2c1ebed1136d1ca4fa8a2e478f44f1be, type: 2}
+--- !u!54 &54225264361783284
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690394658853467}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65528627280358751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690394658853467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.087784, y: 1.219351, z: 0.649017}
+  m_Center: {x: 0, y: -0.0000005066395, z: 0.1332365}
 --- !u!114 &114999952349205884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,10 +121,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba0f35ed9ef60adb99ed3884ee9a81dc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   price: 70
-  description: This platic looking material is actually made\nwith oxidized fiber glass.  It is very\nstrong considering how light it is!
+  description: This platic looking material is actually made\nwith oxidized fiber
+    glass.  It is very\nstrong considering how light it is!
   spin: 0
   spinSpeed: 1
   carryingWeight: 30
@@ -105,30 +144,3 @@ MonoBehaviour:
   maxLife: 70
   life: 0
   defense: 0.045
---- !u!54 &54225264361783284
-Rigidbody:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1690394658853467}
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65528627280358751
-BoxCollider:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1690394658853467}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Size: {x: 1.087784, y: 1.219351, z: 0.649017}
-  m_Center: {x: 0, y: -5.066395E-07, z: 0.1332365}

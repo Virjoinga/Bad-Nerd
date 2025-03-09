@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1001 &100100000
 Prefab:
-  serializedVersion: 2
   m_ObjectHideFlags: 1
+  serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
@@ -11,27 +11,83 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1072844560555361}
   m_IsPrefabParent: 1
-  m_IsExploded: 0
 --- !u!1 &1072844560555361
 GameObject:
-  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4762139068087064}
-  - 33: {fileID: 33830819686766164}
-  - 23: {fileID: 23717649796226921}
-  - 114: {fileID: 114548757650907469}
-  - 65: {fileID: 65446471614875309}
-  - 114: {fileID: 114067261860880452}
+  - component: {fileID: 4762139068087064}
+  - component: {fileID: 33830819686766164}
+  - component: {fileID: 23717649796226921}
+  - component: {fileID: 114548757650907469}
+  - component: {fileID: 65446471614875309}
+  - component: {fileID: 114067261860880452}
   m_Layer: 0
   m_Name: SchoolDoor
   m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1546460038837922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4761713676573101}
+  m_Layer: 0
+  m_Name: landingSpot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1586179963596776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4349585192651539}
+  - component: {fileID: 114096475466453281}
+  m_Layer: 0
+  m_Name: Label
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4349585192651539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1586179963596776}
+  m_LocalRotation: {x: -0.0000010728836, y: 0.70710665, z: -0.70710695, w: 0.0000002277749}
+  m_LocalPosition: {x: 0.000027420016, y: 0.41802326, z: -0.64394176}
+  m_LocalScale: {x: 0.1560392, y: 0.15603921, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4762139068087064}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4761713676573101
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1546460038837922}
+  m_LocalRotation: {x: -0.7071068, y: 0.0000017635692, z: -0.00000019128196, w: 0.7071068}
+  m_LocalPosition: {x: 0.000026283531, y: 48.548275, z: 0.00012823296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4762139068087064}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4762139068087064
 Transform:
   m_ObjectHideFlags: 0
@@ -46,13 +102,7 @@ Transform:
   - {fileID: 4761713676573101}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!33 &33830819686766164
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1072844560555361}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23717649796226921
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62,44 +112,40 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 1
-  m_LightmapIndex: 2
-  m_LightmapTilingOffset: {x: 0.0488281, y: 0.0488281, z: 0.802246, w: 0.566895}
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 0e37f677f3128e44db3b1b9be088323b, type: 2}
-  m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &114548757650907469
-MonoBehaviour:
+--- !u!33 &33830819686766164
+MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072844560555361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ef00c526d2b00a45d4cfca978430638, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  levelToGoTo: Auditorium
-  isDefaultPortal: 0
-  portalId: 0
-  leadsToReuseableScene: 0
-  isInReuseableScene: 0
-  prerequisite: {fileID: 0}
-  goToQuestDestination: 0
-  overrideDoorSign:
-  goOnline: 0
-  isInfirmaryDoor: 0
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &65446471614875309
 BoxCollider:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -107,8 +153,9 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1.0000038, z: 1.0000004}
-  m_Center: {x: 1.1920929E-07, y: 3.8146973E-06, z: 0}
+  m_Center: {x: 0.00000011920929, y: 0.0000038146973, z: 0}
 --- !u!114 &114067261860880452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,44 +165,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e7c3bff608434c7f74859fbc7af5fe1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortByDepth: 0
   showInPanelTool: 1
   generateNormals: 0
   depthPass: 0
   widgetsAreStatic: 0
+  cullWhileDragging: 0
+  worldToLocal:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  mAlpha: 1
   mDebugInfo: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 0, w: 0}
   mClipSoftness: {x: 40, y: 40}
---- !u!1 &1586179963596776
-GameObject:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_Component:
-  - 4: {fileID: 4349585192651539}
-  - 114: {fileID: 114096475466453281}
-  m_Layer: 0
-  m_Name: Label
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4349585192651539
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586179963596776}
-  m_LocalRotation: {x: -1.0728836E-06, y: 0.70710665, z: -0.70710695, w: 2.277749E-07}
-  m_LocalPosition: {x: 2.7420016E-05, y: 0.41802326, z: -0.64394176}
-  m_LocalScale: {x: 0.1560392, y: 0.15603921, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4762139068087064}
-  m_RootOrder: 0
 --- !u!114 &114096475466453281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,16 +204,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 848282c0978acd885155e93949b74925, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  mMat: {fileID: 2100000, guid: c2f909096eed79f4391fc71a9d18f779, type: 2}
-  mTex: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mDepth: 0
   mFont: {fileID: 114728546209673217, guid: 296445825f5a03f4f8c7289f063511a4, type: 2}
   mText: New Label
   mMaxLineWidth: 0
+  mMaxLineHeight: 0
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
@@ -182,32 +220,28 @@ MonoBehaviour:
   mEffectStyle: 0
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
+  mEffectDistance: {x: 1, y: 1}
+  mShrinkToFit: 0
   mLineWidth: 0
   mMultiline: 1
---- !u!1 &1546460038837922
-GameObject:
-  serializedVersion: 4
+--- !u!114 &114548757650907469
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_Component:
-  - 4: {fileID: 4761713676573101}
-  m_Layer: 0
-  m_Name: landingSpot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4761713676573101
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1546460038837922}
-  m_LocalRotation: {x: -0.7071068, y: 1.7635692E-06, z: -1.9128196E-07, w: 0.7071068}
-  m_LocalPosition: {x: 2.6283531E-05, y: 48.548275, z: 0.00012823296}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4762139068087064}
-  m_RootOrder: 1
+  m_GameObject: {fileID: 1072844560555361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef00c526d2b00a45d4cfca978430638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToGoTo: Auditorium
+  isDefaultPortal: 0
+  portalId: 0
+  leadsToReuseableScene: 0
+  isInReuseableScene: 0
+  prerequisite: {fileID: 0}
+  goToQuestDestination: 0
+  overrideDoorSign: 
+  goOnline: 0
+  isInfirmaryDoor: 0

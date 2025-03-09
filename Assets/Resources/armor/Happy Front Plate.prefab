@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1001 &100100000
 Prefab:
-  serializedVersion: 2
   m_ObjectHideFlags: 1
+  serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
@@ -11,26 +11,25 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1307875835368392}
   m_IsPrefabParent: 1
-  m_IsExploded: 0
 --- !u!1 &1307875835368392
 GameObject:
-  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4458453105747373}
-  - 33: {fileID: 33037064376593906}
-  - 23: {fileID: 23910789272876075}
-  - 114: {fileID: 114873630355721542}
-  - 54: {fileID: 54729508207824084}
-  - 65: {fileID: 65753338379681881}
+  - component: {fileID: 4458453105747373}
+  - component: {fileID: 33037064376593906}
+  - component: {fileID: 23910789272876075}
+  - component: {fileID: 114873630355721542}
+  - component: {fileID: 54729508207824084}
+  - component: {fileID: 65753338379681881}
   m_Layer: 14
   m_Name: Happy Front Plate
   m_TagString: armor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4458453105747373
 Transform:
@@ -44,13 +43,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!33 &33037064376593906
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1307875835368392}
-  m_Mesh: {fileID: 4300000, guid: 9c135c082e3dfd1499aca3ff40be2a34, type: 2}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23910789272876075
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60,21 +53,66 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 733bd98d2c37e9440898638552e2f85e, type: 2}
   - {fileID: 2100000, guid: 64755c408ac670740848b4105f84440e, type: 2}
-  m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_LightProbeAnchor: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!33 &33037064376593906
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307875835368392}
+  m_Mesh: {fileID: 4300000, guid: 9c135c082e3dfd1499aca3ff40be2a34, type: 2}
+--- !u!54 &54729508207824084
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307875835368392}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65753338379681881
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307875835368392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.533777, y: 1.53549, z: 0.507286}
+  m_Center: {x: 0.0026465058, y: -0.0020720065, z: 0.033304006}
 --- !u!114 &114873630355721542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,10 +122,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14ced701711c9af296d4efb79ebd6c06, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   price: 1000
-  description: Made with silicone tri glicernitrate.\nThis happy face can absorb a\nheck of a lot of impact, keeping a\nsmile on your face while getting punched!
+  description: Made with silicone tri glicernitrate.\nThis happy face can absorb a\nheck
+    of a lot of impact, keeping a\nsmile on your face while getting punched!
   spin: 0
   spinSpeed: 1
   carryingWeight: 125
@@ -106,30 +145,3 @@ MonoBehaviour:
   maxLife: 1000
   life: 0
   defense: 0.65
---- !u!54 &54729508207824084
-Rigidbody:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1307875835368392}
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65753338379681881
-BoxCollider:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1307875835368392}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Size: {x: 1.533777, y: 1.53549, z: 0.507286}
-  m_Center: {x: 0.0026465058, y: -0.0020720065, z: 0.033304006}

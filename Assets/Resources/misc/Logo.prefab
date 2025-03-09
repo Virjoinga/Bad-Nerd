@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1001 &100100000
 Prefab:
-  serializedVersion: 2
   m_ObjectHideFlags: 1
+  serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
@@ -11,17 +11,16 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1618053077291649}
   m_IsPrefabParent: 1
-  m_IsExploded: 0
 --- !u!1 &1618053077291649
 GameObject:
-  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4496873046751312}
-  - 131: {fileID: 131146746994238225}
-  - 114: {fileID: 114698036379642003}
+  - component: {fileID: 4496873046751312}
+  - component: {fileID: 131146746994238225}
+  - component: {fileID: 114698036379642003}
   m_Layer: 0
   m_Name: Logo
   m_TagString: Untagged
@@ -41,6 +40,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114698036379642003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618053077291649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!131 &131146746994238225
 GUITexture:
   m_ObjectHideFlags: 0
@@ -60,14 +71,3 @@ GUITexture:
   m_RightBorder: -203
   m_TopBorder: -181
   m_BottomBorder: -217
---- !u!114 &114698036379642003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1618053077291649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name:
-  m_EditorClassIdentifier:
